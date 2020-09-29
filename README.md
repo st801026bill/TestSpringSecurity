@@ -15,9 +15,10 @@ create table authorities (
   unique index authorities_idx_1 (username, authority));
 
 #新增帳號權限資料
-INSERT INTO users(username,password,enabled)
-VALUES('user', '$2a$10$JvqOtJaDys0yoXPX9w47YOqu9wZr/PkN1dJqjG9HHAzMyu9EV1R4m', '1');
+insert into users(username,password,enabled)
+values('user', '$2a$10$JvqOtJaDys0yoXPX9w47YOqu9wZr/PkN1dJqjG9HHAzMyu9EV1R4m', '1');
 
-INSERT INTO authorities(username,authority) 
-VALUES ('user', 'ROLE_ADMIN');
+insert into authorities(username,authority) 
+values ('admin', 'ROLE_ADMIN');
+values ('user', 'ROLE_USER');
 ```

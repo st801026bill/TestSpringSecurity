@@ -19,6 +19,5 @@ insert into users(username,password,enabled)
 values('user', '$2a$10$JvqOtJaDys0yoXPX9w47YOqu9wZr/PkN1dJqjG9HHAzMyu9EV1R4m', '1');
 
 insert into authorities(username,authority) 
-values ('admin', 'ROLE_ADMIN');
-values ('user', 'ROLE_USER');
+values ('user', 'ROLE_ADMIN');
 ```
